@@ -129,12 +129,12 @@ export default function ArticlePage({
 			<main className={styles.Container}>
 				<article v-if="currentArticle" className={styles.Article}>
 					<div className={styles.Article_Cover}>
-						<img src={currentArticle.coverImage.src} alt="" />
+						<img src={currentArticle?.coverImage?.src} alt="" />
 					</div>
 					<div className={styles.Article_Header}>
-						<h1 className={styles.Article_Title}>{currentArticle.title}</h1>
+						<h1 className={styles.Article_Title}>{currentArticle?.title}</h1>
 						<ul className={styles.Article_Tags}>
-							{currentArticle.tags.map((tag) => (
+							{currentArticle?.tags.map((tag) => (
 								<li key={tag._id}>
 									<Link href={`/tag/${tag.slug}`}>#{tag.name}</Link>
 								</li>
@@ -143,7 +143,7 @@ export default function ArticlePage({
 						<div className={styles.Article_Row}>
 							<div className={styles.Article_Author}>
 								<a href="#" className={styles.Article_Avatar}>
-									{currentArticle.author?.profileImage?.src ? (
+									{currentArticle?.author?.profileImage?.src ? (
 										<img
 											src={currentArticle.author.profileImage.src}
 											alt=""
@@ -164,7 +164,7 @@ export default function ArticlePage({
 								</a>
 								<div className={styles.Article_AuthorData}>
 									<Link
-										href={`/author/${currentArticle.author.slug}`}
+										href={`/author/${currentArticle?.author?.slug}`}
 										className={styles.Article_AuthorName}>
 										{authorName}
 									</Link>
@@ -236,7 +236,7 @@ export default function ArticlePage({
 					</div>
 					<aside className={styles.Author}>
 						<a href="#" className={styles.Author_Avatar}>
-							{currentArticle.author?.profileImage?.src ? (
+							{currentArticle?.author?.profileImage?.src ? (
 								<img src={currentArticle.author.profileImage.src} alt="" width="48" height="48" />
 							) : (
 								<svg
@@ -252,7 +252,7 @@ export default function ArticlePage({
 						</a>
 						<div className={styles.Author_Text}>
 							<Link
-								href={`/author/${currentArticle.author.slug}`}
+								href={`/author/${currentArticle?.author?.slug}`}
 								className={styles.Article_AuthorName}>
 								{authorName}
 							</Link>
