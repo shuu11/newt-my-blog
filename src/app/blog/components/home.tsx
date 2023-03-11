@@ -1,15 +1,15 @@
 import { AppMeta, Content } from 'newt-client-js'
 import Head from 'next/head'
-import styles from 'styles/Home.module.css'
+import styles from '@a/features/styles/Home.module.css'
 import { Cover } from './cover'
 import { Layout } from './layout'
-import { Tag } from 'types/tag'
+import { Tag } from 'features/types/tag'
 import { ArticleCard } from './articleCard'
-import { Archive, Article } from 'types/article'
+import { Archive, Article } from 'features/types/article'
 import { Pagination } from './pagination'
 import { useMemo } from 'react'
 import { Side } from './side'
-import { Author } from 'types/author'
+import { Author } from 'features/types/author'
 
 export interface HomeProps {
 	app: AppMeta

@@ -2,7 +2,7 @@ import { AppMeta } from 'newt-client-js'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import styles from 'styles/Header.module.css'
+import styles from '@a/features/styles/Header.module.css'
 
 export function Header({ app }: { app: AppMeta }) {
 	const router = useRouter()

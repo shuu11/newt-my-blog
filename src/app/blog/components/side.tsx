@@ -1,9 +1,9 @@
 import { Content } from 'newt-client-js'
-import { Tag } from 'types/tag'
-import styles from 'styles/Side.module.css'
+import { Tag } from 'features/types/tag'
+import styles from '@a/features/styles/Side.module.css'
 import Link from 'next/link'
-import { Author } from 'types/author'
-import { Archive } from 'types/article'
+import { Author } from 'features/types/author'
+import { Archive } from 'features/types/article'
 
 export function Side({
 	popularTags,

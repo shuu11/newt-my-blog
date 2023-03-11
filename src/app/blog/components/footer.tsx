@@ -1,6 +1,6 @@
 import { AppMeta } from 'newt-client-js'
 import Link from 'next/link'
-import styles from 'styles/Footer.module.css'
+import styles from '@a/features/styles/Footer.module.css'
 
 export function Footer({ app }: { app: AppMeta }) {
 	return (

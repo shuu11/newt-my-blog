@@ -1,4 +1,4 @@
-import styles from 'styles/Cover.module.css'
+import styles from '@a/features/styles/Cover.module.css'
 import { AppMeta } from 'newt-client-js'
 
 export function Cover({ app }: { app: AppMeta }) {

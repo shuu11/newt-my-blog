@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import styles from 'styles/ArticleCard.module.css'
+import styles from '@a/features/styles/ArticleCard.module.css'
 import { formatDate } from '@a/features/lib/date'
 import { Content } from 'newt-client-js'
-import { Article } from 'types/article'
+import { Article } from 'features/types/article'
 import { useMemo } from 'react'
 
 export function ArticleCard({ article }: { article: Content & Article }) {

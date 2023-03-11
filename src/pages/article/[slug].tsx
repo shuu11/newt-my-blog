@@ -1,7 +1,7 @@
 import { AppMeta, Content } from 'newt-client-js'
-import styles from 'styles/Article.module.css'
+import styles from 'features/styles/Article.module.css'
 import Head from 'next/head'
-import { useCallback, useMemo } from 'react'
+import { useEffect, useCallback, useMemo } from 'react'
 import { Layout } from '@a/components/layout'
 import {
 	fetchApp,
@@ -11,9 +11,11 @@ import {
 	fetchPreviousArticle,
 } from '@a/features/lib/api'
 import { formatDate } from '@a/features/lib/date'
-import { Article } from 'types/article'
+import { Article } from 'features/types/article'
 import { htmlToText } from 'html-to-text'
 import Link from 'next/link'
+
+import { Prism } from 'features/lib/prism'
 
 export default function ArticlePage({
 	app,
@@ -26,6 +28,10 @@ export default function ArticlePage({
 	prevArticle: (Content & Article) | null
 	nextArticle: (Content & Article) | null
 }) {
+	useEffect(() => {
+		Prism.highlightAll()
+	}, [])
+
 	const meta = useMemo(() => {
 		if (currentArticle?.meta) {
 			return currentArticle.meta

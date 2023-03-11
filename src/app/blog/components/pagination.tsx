@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from 'styles/Pagination.module.css'
+import styles from '@a/features/styles/Pagination.module.css'
 import { useMemo } from 'react'
 
 export function Pagination({

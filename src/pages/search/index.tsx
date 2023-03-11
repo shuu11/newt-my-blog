@@ -1,4 +1,4 @@
-import styles from 'styles/Search.module.css'
+import styles from 'features/styles/Search.module.css'
 import { AppMeta, Content } from 'newt-client-js'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useMemo, useState } from 'react'
 import { Layout } from '@a/components/layout'
 import { fetchApp, fetchArticles } from '@a/features/lib/api'
-import { Article } from 'types/article'
+import { Article } from 'features/types/article'
 import { htmlToText } from 'html-to-text'
 
 export default function Search({ app }: { app: AppMeta }) {

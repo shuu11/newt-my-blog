@@ -1,7 +1,7 @@
 import { Content, createClient } from 'newt-client-js'
-import { Archive, Article } from 'types/article'
-import { Author } from 'types/author'
-import { Tag } from 'types/tag'
+import { Archive, Article } from 'features/types/article'
+import { Author } from 'features/types/author'
+import { Tag } from 'features/types/tag'
 
 const client = createClient({
 	spaceUid: process.env.NEXT_PUBLIC_NEWT_SPACE_UID,

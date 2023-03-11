@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from 'styles/Error.module.css'
+import styles from 'features/styles/Error.module.css'
 
 export default function Error({ statusCode }) {
 	return (

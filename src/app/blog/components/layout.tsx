@@ -1,6 +1,6 @@
 import { AppMeta } from 'newt-client-js'
 import { PropsWithChildren } from 'react'
-import styles from 'styles/Layout.module.css'
+import styles from '@a/features/styles/Layout.module.css'
 import { Badge } from './badge'
 import { Footer } from './footer'
 import { Header } from './header'

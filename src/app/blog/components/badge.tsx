@@ -1,4 +1,4 @@
-import styles from 'styles/Badge.module.css'
+import styles from '@a/features/styles/Badge.module.css'
 
 export function Badge() {
 	return (
